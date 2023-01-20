@@ -1,0 +1,24 @@
+create table alunos(
+id int auto_increment primary key,
+nome varchar (100),
+email varchar(100),
+curso varchar(200)
+);
+
+select * from alunos;
+
+insert into alunos(nome,email,curso) values
+('Lucas','lucas@email.com','Tec em Informatica para Internet'),
+('Cleiton','cleiton@email.com','Tec em Informatica para Internet'),
+('Silva','silva@email.com','Tec em Qualidade');
+
+insert into alunos(nome,email,curso) values 
+('Ferreira','ferreira@email.com','Tecnologo em ADS');
+
+update alunos set (nome,email,curso) where;
+
+
+delete from alunos where id
+
+update alunos set 'curso=qualidade' where id='11';
+

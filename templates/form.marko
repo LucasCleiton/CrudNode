@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="container">
+    <h1>Cadastro</h1>
+    <br>
+    <form action ="/alunos" method="post">
+        <input type="hidden" name="id" value="${data.id}">
+        <input type="text" name="nome" placeholder="nome" value="${data.nome}">
+        <input type="email" name="email" placeholder="email" value="${data.email}" >
+       
+        <label>Cursos</label>
+        
+        <p>
+          <label>
+            <input name="curso" type="radio" values="ads" checked = "${data.curso == 'ads'}" />
+            <span>ADS</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input name="curso" type="radio" values="ipi" checked = "${data.curso == 'ipi'}" />
+            <span>Informática para Internet</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input name="curso" type="radio" values="qualidade" checked = "${data.curso == 'qualidade'}" />
+            <span>Qualidade</span>
+          </label>
+        </p>
+
+
+
+
+          <a href="/" style="margin-right: 10pt;" class="waves-effect waves-light btn">Cancelar</a>
+        
+
+        <button class="waves-effect waves-light btn" type="submit">Salvar</button>
+        
+    </form>
+</div>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
